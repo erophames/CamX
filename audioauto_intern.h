@@ -1,0 +1,5 @@
+#ifndef CAMX_AUDIOAUTOINTERN
+#define CAMX_AUDIOAUTOINTERN 1
+
+
+#endif

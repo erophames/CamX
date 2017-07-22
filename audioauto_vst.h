@@ -1,0 +1,4 @@
+#ifndef CAMX_AUDIOAUTOOBJ_VST
+#define CAMX_AUDIOAUTOOBJ_VST 1
+
+#endif

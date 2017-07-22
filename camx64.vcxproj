@@ -1,0 +1,978 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debugx6464|Win32">
+      <Configuration>Debugx6464</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debugx6464|x64">
+      <Configuration>Debugx6464</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debugx64|Win32">
+      <Configuration>Debugx64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debugx64|x64">
+      <Configuration>Debugx64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Releasex6464|Win32">
+      <Configuration>Releasex6464</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Releasex6464|x64">
+      <Configuration>Releasex6464</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Releasex64|Win32">
+      <Configuration>Releasex64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Releasex64|x64">
+      <Configuration>Releasex64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DEUx6464|Win32">
+      <Configuration>Release_DEUx6464</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DEUx6464|x64">
+      <Configuration>Release_DEUx6464</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DEUx64|Win32">
+      <Configuration>Release_DEUx64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DEUx64|x64">
+      <Configuration>Release_DEUx64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CamX</ProjectName>
+    <ProjectGuid>{3F546443-8C0A-4BB1-8C7E-3BF90983A2B0}</ProjectGuid>
+    <RootNamespace>CamX</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releasex6464|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releasex64|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx64|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx6464|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugx6464|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugx64|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releasex6464|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>PGOptimize</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releasex64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>PGOptimize</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>PGOptimize</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx6464|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>PGOptimize</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugx6464|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugx64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Releasex6464|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Releasex64|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx64|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx6464|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debugx6464|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debugx64|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Releasex6464|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Releasex64|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx64|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx6464|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debugx6464|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debugx64|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugx64|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugx6464|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx6464|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx64|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releasex64|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Releasex6464|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debugx64|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/camx.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeaderOutputFile>.\Debugx64/camx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debugx64/</AssemblerListingLocation>
+      <ObjectFileName>.\Debugx64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debugx64/</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>MSVCRTd.lib;winmm.lib;odbc32.lib;odbccp32.lib;wmvcore.lib;msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)$(Configuration)\CamX64.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debugx64/camx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debugx6464|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;WIN32;_DEBUG;_WINDOWS;ARES64;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeaderOutputFile>.\Debugx6464/camx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debugx6464/</AssemblerListingLocation>
+      <ObjectFileName>.\Debugx6464/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debugx6464/</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;ARES64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;winmm.lib;odbc32.lib;odbccp32.lib;wmvcore.lib;msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)$(Configuration)\CamX64.exe</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debugx6464/camx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx6464|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/camx.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NEBUG;_WINDOWS;DEU;ARES64;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeaderOutputFile>.\Release_DEUx6464/camx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release_DEUx6464/</AssemblerListingLocation>
+      <ObjectFileName>.\Release_DEUx6464/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_DEUx6464/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>MSVCRT.lib;winmm.lib;odbc32.lib;odbccp32.lib;wmvcore.lib;msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)$(Configuration)\CamX64.exe</OutputFile>
+      <ProgramDatabaseFile>.\Release_DEUx6464/camx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEUx64|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/camx.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NEBUG;_WINDOWS;DEU;ARES32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeaderOutputFile>.\Release_DEUx64/camx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release_DEUx64/</AssemblerListingLocation>
+      <ObjectFileName>.\Release_DEUx64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_DEUx64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>MSVCRT.lib;winmm.lib;odbc32.lib;odbccp32.lib;wmvcore.lib;msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)$(Configuration)\CamX64.exe</OutputFile>
+      <ProgramDatabaseFile>.\Release_DEUx64/camx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Releasex64|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/camx.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NEBUG;_WINDOWS;ENG;ARES32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeaderOutputFile>.\Releasex64/camx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Releasex64/</AssemblerListingLocation>
+      <ObjectFileName>.\Releasex64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Releasex64/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>MSVCRT.lib;winmm.lib;odbc32.lib;odbccp32.lib;wmvcore.lib;msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)$(Configuration)\CamX64.exe</OutputFile>
+      <ProgramDatabaseFile>.\Releasex64/camx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Releasex6464|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/camx.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NEBUG;_WINDOWS;ENG;ARES64;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeaderOutputFile>.\Releasex6464/camx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Releasex6464/</AssemblerListingLocation>
+      <ObjectFileName>.\Releasex6464/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Releasex6464/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>MSVCRT.lib;winmm.lib;odbc32.lib;odbccp32.lib;wmvcore.lib;msacm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)$(Configuration)\CamX64.exe</OutputFile>
+      <ProgramDatabaseFile>.\Releasex6464/camx.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PhonoStar_new\ex_wave.cpp" />
+    <ClCompile Include="..\PhonoStar_new\ex_wave_io.cpp" />
+    <ClCompile Include="arrangeditor.cpp" />
+    <ClCompile Include="arrangeditor_fx.cpp" />
+    <ClCompile Include="arrangeeditorlist.cpp" />
+    <ClCompile Include="arrange_automation.cpp" />
+    <ClCompile Include="asioaudio.cpp" />
+    <ClCompile Include="asio\asio.cpp" />
+    <ClCompile Include="asio\asiodrivers.cpp" />
+    <ClCompile Include="asio\asiolist.cpp" />
+    <ClCompile Include="audiochannel.cpp" />
+    <ClCompile Include="audiochannelconnect.cpp" />
+    <ClCompile Include="audioconvert.cpp" />
+    <ClCompile Include="audiodevice.cpp" />
+    <ClCompile Include="audioeffect.cpp" />
+    <ClCompile Include="audioeffects.cpp" />
+    <ClCompile Include="audioeffects32.cpp" />
+    <ClCompile Include="audioeffects64.cpp" />
+    <ClCompile Include="audioevent.cpp" />
+    <ClCompile Include="audiofile.cpp" />
+    <ClCompile Include="audiofilework.cpp" />
+    <ClCompile Include="audiofilework_camx.cpp" />
+    <ClCompile Include="audiofilework_thread.cpp" />
+    <ClCompile Include="audiohardware.cpp" />
+    <ClCompile Include="audiohardwarechannel.cpp" />
+    <ClCompile Include="audiohardwarechannel_asio24.cpp" />
+    <ClCompile Include="audiohdfile.cpp" />
+    <ClCompile Include="audiointern.cpp" />
+    <ClCompile Include="audioiofx.cpp" />
+    <ClCompile Include="audioiothread.cpp" />
+    <ClCompile Include="audiomanager.cpp" />
+    <ClCompile Include="audiomaster.cpp" />
+    <ClCompile Include="audiomix.cpp" />
+    <ClCompile Include="audiomixer_editor.cpp" />
+    <ClCompile Include="audioobject_mute.cpp" />
+    <ClCompile Include="audioobject_volume.cpp" />
+    <ClCompile Include="audiooutproc.cpp" />
+    <ClCompile Include="audiopattern_volumecurve.cpp" />
+    <ClCompile Include="audiopeakfile.cpp" />
+    <ClCompile Include="audioplayback.cpp" />
+    <ClCompile Include="audioport.cpp" />
+    <ClCompile Include="audiorealtime.cpp" />
+    <ClCompile Include="audiorecord.cpp" />
+    <ClCompile Include="audioregion.cpp" />
+    <ClCompile Include="audiosend.cpp" />
+    <ClCompile Include="audiosystem.cpp" />
+    <ClCompile Include="audio_allpass.cpp" />
+    <ClCompile Include="audio_chorus.cpp" />
+    <ClCompile Include="audio_delay.cpp" />
+    <ClCompile Include="audio_equalizer.cpp" />
+    <ClCompile Include="audio_ivolume.cpp" />
+    <ClCompile Include="automation.cpp" />
+    <ClCompile Include="automation_audio.cpp" />
+    <ClCompile Include="automation_midi.cpp" />
+    <ClCompile Include="bigtime.cpp" />
+    <ClCompile Include="camx.cpp" />
+    <ClCompile Include="camxasio.cpp" />
+    <ClCompile Include="camxfile.cpp" />
+    <ClCompile Include="checksum.cpp" />
+    <ClCompile Include="checkworkfiles.cpp" />
+    <ClCompile Include="colourrequester.cpp" />
+    <ClCompile Include="cpuid.c" />
+    <ClCompile Include="crossfade.cpp" />
+    <ClCompile Include="cshowpeak.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="decoder.cpp" />
+    <ClCompile Include="drum.cpp" />
+    <ClCompile Include="drumeditorfx.cpp" />
+    <ClCompile Include="drumeditorlist.cpp" />
+    <ClCompile Include="drumfxeditor.cpp" />
+    <ClCompile Include="drummap.cpp" />
+    <ClCompile Include="edifunctions_song.cpp" />
+    <ClCompile Include="editbuffer.cpp" />
+    <ClCompile Include="editcrossfade.cpp" />
+    <ClCompile Include="editdata.cpp" />
+    <ClCompile Include="editfunctions.cpp" />
+    <ClCompile Include="editfunctions_audio.cpp" />
+    <ClCompile Include="editfunctions_marker.cpp" />
+    <ClCompile Include="editfunctions_pattern.cpp" />
+    <ClCompile Include="editfunctions_recording.cpp" />
+    <ClCompile Include="editfunctions_subtrack.cpp" />
+    <ClCompile Include="editfunctions_tempo.cpp" />
+    <ClCompile Include="editfunctions_text.cpp" />
+    <ClCompile Include="editmidifilter.cpp" />
+    <ClCompile Include="editor.cpp" />
+    <ClCompile Include="editordefinitions.cpp" />
+    <ClCompile Include="editortools.cpp" />
+    <ClCompile Include="editor_cpu.cpp" />
+    <ClCompile Include="editor_monitor.cpp" />
+    <ClCompile Include="editor_toolbox.cpp" />
+    <ClCompile Include="edit_audiointern.cpp" />
+    <ClCompile Include="edit_createtracks.cpp" />
+    <ClCompile Include="edit_drummap.cpp" />
+    <ClCompile Include="edit_keyboard.cpp" />
+    <ClCompile Include="edit_processor.cpp" />
+    <ClCompile Include="edit_rmg.cpp" />
+    <ClCompile Include="edit_score.cpp" />
+    <ClCompile Include="edit_win32audio.cpp" />
+    <ClCompile Include="eq_test.cpp" />
+    <ClCompile Include="eventcreation.cpp" />
+    <ClCompile Include="eventeditor.cpp" />
+    <ClCompile Include="folder.cpp" />
+    <ClCompile Include="globalmenus.cpp" />
+    <ClCompile Include="grooveeditor.cpp" />
+    <ClCompile Include="groovequant.cpp" />
+    <ClCompile Include="groupeditor.cpp" />
+    <ClCompile Include="groups.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="guibitmap.cpp" />
+    <ClCompile Include="guiform.cpp" />
+    <ClCompile Include="guigadgets.cpp" />
+    <ClCompile Include="guigraphics.cpp" />
+    <ClCompile Include="guimenu.cpp" />
+    <ClCompile Include="guiwindow.cpp" />
+    <ClCompile Include="icddrum.cpp" />
+    <ClCompile Include="icdobject.cpp" />
+    <ClCompile Include="inithardware.cpp" />
+    <ClCompile Include="initthreads.cpp" />
+    <ClCompile Include="intern_audiofx.cpp" />
+    <ClCompile Include="intern_panorama.cpp" />
+    <ClCompile Include="knob_button.cpp" />
+    <ClCompile Include="language.cpp" />
+    <ClCompile Include="languagefiles.cpp" />
+    <ClCompile Include="library.cpp" />
+    <ClCompile Include="locale.cpp" />
+    <ClCompile Include="mainaudio.cpp" />
+    <ClCompile Include="mainhelpthread.cpp" />
+    <ClCompile Include="mainmidi.cpp" />
+    <ClCompile Include="markereditor.cpp" />
+    <ClCompile Include="memorypools.cpp" />
+    <ClCompile Include="metronome.cpp" />
+    <ClCompile Include="midiautomation.cpp" />
+    <ClCompile Include="midichannel.cpp" />
+    <ClCompile Include="midieditors.cpp" />
+    <ClCompile Include="midieffecteditor.cpp" />
+    <ClCompile Include="midieffects.cpp" />
+    <ClCompile Include="midifile.cpp" />
+    <ClCompile Include="midifilter.cpp" />
+    <ClCompile Include="midifxeditor.cpp" />
+    <ClCompile Include="midiinput.cpp" />
+    <ClCompile Include="midiinputproc.cpp" />
+    <ClCompile Include="midiiofx.cpp" />
+    <ClCompile Include="midimtchtread.cpp" />
+    <ClCompile Include="midioutput.cpp" />
+    <ClCompile Include="midioutputproc.cpp" />
+    <ClCompile Include="midipattern.cpp" />
+    <ClCompile Include="midiports.cpp" />
+    <ClCompile Include="midiprocessor.cpp" />
+    <ClCompile Include="midiquarterframe.cpp" />
+    <ClCompile Include="midirecording.cpp" />
+    <ClCompile Include="midisync.cpp" />
+    <ClCompile Include="midithreadsync.cpp" />
+    <ClCompile Include="midithruproc.cpp" />
+    <ClCompile Include="miditimer.cpp" />
+    <ClCompile Include="mp3main.cpp" />
+    <ClCompile Include="numberobjects.cpp" />
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="panlaw.cpp" />
+    <ClCompile Include="PathDialog.cpp" />
+    <ClCompile Include="patternlinks.cpp" />
+    <ClCompile Include="patternvolume.cpp" />
+    <ClCompile Include="pianoeditor.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="pluginwindow.cpp" />
+    <ClCompile Include="processor.cpp" />
+    <ClCompile Include="processormodule.cpp" />
+    <ClCompile Include="proc_appr.cpp" />
+    <ClCompile Include="proc_chord.cpp" />
+    <ClCompile Include="proc_delay.cpp" />
+    <ClCompile Include="programsettings.cpp" />
+    <ClCompile Include="progress.cpp" />
+    <ClCompile Include="quantizeeditor.cpp" />
+    <ClCompile Include="realtimeevent.cpp" />
+    <ClCompile Include="recording.cpp" />
+    <ClCompile Include="resample\samplerate.c" />
+    <ClCompile Include="resample\src_linear.c" />
+    <ClCompile Include="resample\src_sinc.c" />
+    <ClCompile Include="resample\src_zoh.c" />
+    <ClCompile Include="resampling.cpp" />
+    <ClCompile Include="rmg.cpp" />
+    <ClCompile Include="sampleditor.cpp" />
+    <ClCompile Include="sampleregionedit.cpp" />
+    <ClCompile Include="screen.cpp" />
+    <ClCompile Include="searchfilter.cpp" />
+    <ClCompile Include="separateouts.cpp" />
+    <ClCompile Include="seqmain.cpp" />
+    <ClCompile Include="seqpos.cpp" />
+    <ClCompile Include="seqproject.cpp" />
+    <ClCompile Include="seqsignature.cpp" />
+    <ClCompile Include="seqtempo.cpp" />
+    <ClCompile Include="seqtime.cpp" />
+    <ClCompile Include="seq_event.cpp" />
+    <ClCompile Include="seq_pattern.cpp" />
+    <ClCompile Include="seq_selection.cpp" />
+    <ClCompile Include="seq_song.cpp" />
+    <ClCompile Include="seq_songtempo.cpp" />
+    <ClCompile Include="seq_track.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="settingseditor.cpp" />
+    <ClCompile Include="songmain.cpp" />
+    <ClCompile Include="songstream.cpp" />
+    <ClCompile Include="song_playback.cpp" />
+    <ClCompile Include="stepeditor.cpp" />
+    <ClCompile Include="sysex.cpp" />
+    <ClCompile Include="systemautiomation.cpp" />
+    <ClCompile Include="tempomapeditor.cpp" />
+    <ClCompile Include="tempomaplist.cpp" />
+    <ClCompile Include="textandmarker.cpp" />
+    <ClCompile Include="texteditor.cpp" />
+    <ClCompile Include="threads.cpp" />
+    <ClCompile Include="threadsemacontrol.cpp" />
+    <ClCompile Include="trackeffects.cpp" />
+    <ClCompile Include="trackhead.cpp" />
+    <ClCompile Include="transport.cpp" />
+    <ClCompile Include="undo.cpp" />
+    <ClCompile Include="undoghost.cpp" />
+    <ClCompile Include="undo_events.cpp" />
+    <ClCompile Include="update.cpp" />
+    <ClCompile Include="vcut.cpp" />
+    <ClCompile Include="vsteditor.cpp" />
+    <ClCompile Include="vstplugins.cpp" />
+    <ClCompile Include="waveeditor.cpp" />
+    <ClCompile Include="wavefxeditor.cpp" />
+    <ClCompile Include="wavemap.cpp" />
+    <ClCompile Include="win32audio.cpp" />
+    <ClCompile Include="winaudio.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PhonoStar_new\ex_wave.h" />
+    <ClInclude Include="..\PhonoStar_new\systemdefines.h" />
+    <ClInclude Include="arrangeditor.h" />
+    <ClInclude Include="arrangeditor_defines.h" />
+    <ClInclude Include="arrangeeditor.h" />
+    <ClInclude Include="arrangeeditorlist.h" />
+    <ClInclude Include="arrangeeditor_fx.h" />
+    <ClInclude Include="arrangeeditor_menus.h" />
+    <ClInclude Include="asio\asio.h" />
+    <ClInclude Include="asio\asiodrivers.h" />
+    <ClInclude Include="asio\asiodrvr.h" />
+    <ClInclude Include="asio\asiolist.h" />
+    <ClInclude Include="asio\asiosys.h" />
+    <ClInclude Include="asio\ginclude.h" />
+    <ClInclude Include="asio\iasiodrv.h" />
+    <ClInclude Include="asio_device.h" />
+    <ClInclude Include="audioauto_intern.h" />
+    <ClInclude Include="audioauto_volume.h" />
+    <ClInclude Include="audioauto_vst.h" />
+    <ClInclude Include="audiobus.h" />
+    <ClInclude Include="audiochannel.h" />
+    <ClInclude Include="audiochanneltypes.h" />
+    <ClInclude Include="audiodefines.h" />
+    <ClInclude Include="audiodevice.h" />
+    <ClInclude Include="audiodriver.h" />
+    <ClInclude Include="audioeffects.h" />
+    <ClInclude Include="audiofile.h" />
+    <ClInclude Include="audiofilework.h" />
+    <ClInclude Include="audiofx_reverb.h" />
+    <ClInclude Include="audiogroups.h" />
+    <ClInclude Include="audiohardware.h" />
+    <ClInclude Include="audiohardwarebuffer.h" />
+    <ClInclude Include="audiohardwarechannel.h" />
+    <ClInclude Include="audiohdfile.h" />
+    <ClInclude Include="audioiofx.h" />
+    <ClInclude Include="audiomanager.h" />
+    <ClInclude Include="audiomaster.h" />
+    <ClInclude Include="audiomixeditor.h" />
+    <ClInclude Include="audiomixer.h" />
+    <ClInclude Include="audioobjects.h" />
+    <ClInclude Include="audioobjecttrack.h" />
+    <ClInclude Include="audioobject_allfilter.h" />
+    <ClInclude Include="audioobject_chorus.h" />
+    <ClInclude Include="audioobject_delay.h" />
+    <ClInclude Include="AudioObject_Equalizer.h" />
+    <ClInclude Include="audioobject_insertvolume.h" />
+    <ClInclude Include="audioobject_pan.h" />
+    <ClInclude Include="audioobject_volume.h" />
+    <ClInclude Include="audiopeakbuffer.h" />
+    <ClInclude Include="audiopeakfile.h" />
+    <ClInclude Include="audioports.h" />
+    <ClInclude Include="audioproc.h" />
+    <ClInclude Include="audiorealtime.h" />
+    <ClInclude Include="audiorecord.h" />
+    <ClInclude Include="audioregion.h" />
+    <ClInclude Include="audiosend.h" />
+    <ClInclude Include="audiosystem.h" />
+    <ClInclude Include="audiothread.h" />
+    <ClInclude Include="automation.h" />
+    <ClInclude Include="autoobject.h" />
+    <ClInclude Include="bigtime.h" />
+    <ClInclude Include="boundframe.h" />
+    <ClInclude Include="camxfile.h" />
+    <ClInclude Include="camxgadgets.h" />
+    <ClInclude Include="camximages.h" />
+    <ClInclude Include="camxinfo.h" />
+    <ClInclude Include="checksum.h" />
+    <ClInclude Include="chunk.h" />
+    <ClInclude Include="chunks.h" />
+    <ClInclude Include="colourrequester.h" />
+    <ClInclude Include="cpuid.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="decoder.h" />
+    <ClInclude Include="defines.h" />
+    <ClInclude Include="directs.h" />
+    <ClInclude Include="directsounddevice.h" />
+    <ClInclude Include="drumeditor.h" />
+    <ClInclude Include="drumeditordefines.h" />
+    <ClInclude Include="drumeditorfx.h" />
+    <ClInclude Include="drumeditorlist.h" />
+    <ClInclude Include="drumevent.h" />
+    <ClInclude Include="drummap.h" />
+    <ClInclude Include="drumtrack.h" />
+    <ClInclude Include="drumtrackfx.h" />
+    <ClInclude Include="editaudiofx.h" />
+    <ClInclude Include="editbuffer.h" />
+    <ClInclude Include="editcrossfade.h" />
+    <ClInclude Include="editdata.h" />
+    <ClInclude Include="editframe.h" />
+    <ClInclude Include="editfunctions.h" />
+    <ClInclude Include="editfunctions_pattern.h" />
+    <ClInclude Include="editmidifilter.h" />
+    <ClInclude Include="editor.h" />
+    <ClInclude Include="editorsprite.h" />
+    <ClInclude Include="editortypes.h" />
+    <ClInclude Include="editor_cpu.h" />
+    <ClInclude Include="editor_default.h" />
+    <ClInclude Include="editor_event.h" />
+    <ClInclude Include="editor_help.h" />
+    <ClInclude Include="editor_marker.h" />
+    <ClInclude Include="editor_midimonitor.h" />
+    <ClInclude Include="editor_monitor.h" />
+    <ClInclude Include="editor_text.h" />
+    <ClInclude Include="editsettings.h" />
+    <ClInclude Include="editwin32audio.h" />
+    <ClInclude Include="edit_audiointern.h" />
+    <ClInclude Include="edit_createtracks.h" />
+    <ClInclude Include="edit_processor.h" />
+    <ClInclude Include="eqtest.h" />
+    <ClInclude Include="eventeditordefines.h" />
+    <ClInclude Include="folder.h" />
+    <ClInclude Include="freeze.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="globalmenus.h" />
+    <ClInclude Include="gmdrums.h" />
+    <ClInclude Include="groove.h" />
+    <ClInclude Include="groupeditor.h" />
+    <ClInclude Include="GUI.H" />
+    <ClInclude Include="guifont.h" />
+    <ClInclude Include="guiform.h" />
+    <ClInclude Include="guiframe.h" />
+    <ClInclude Include="guigadgets.h" />
+    <ClInclude Include="guigraphics.h" />
+    <ClInclude Include="guiheader.h" />
+    <ClInclude Include="guimenu.h" />
+    <ClInclude Include="guiobjects.h" />
+    <ClInclude Include="guiwindow.h" />
+    <ClInclude Include="icdobject.h" />
+    <ClInclude Include="imagesdefines.h" />
+    <ClInclude Include="initplayback.h" />
+    <ClInclude Include="intern_audiofx.h" />
+    <ClInclude Include="keyboard.h" />
+    <ClInclude Include="language.h" />
+    <ClInclude Include="languagefiles.h" />
+    <ClInclude Include="lastmidievent.h" />
+    <ClInclude Include="library.h" />
+    <ClInclude Include="mainhelpthread.h" />
+    <ClInclude Include="mempools.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="menu_editwave.h" />
+    <ClInclude Include="metronome.h" />
+    <ClInclude Include="midiautomation.h" />
+    <ClInclude Include="midiclock.h" />
+    <ClInclude Include="MidiClockThread.h" />
+    <ClInclude Include="midicontrolmap.h" />
+    <ClInclude Include="midieffects.h" />
+    <ClInclude Include="midifile.h" />
+    <ClInclude Include="midifilter.h" />
+    <ClInclude Include="midihardware.h" />
+    <ClInclude Include="midiindevice.h" />
+    <ClInclude Include="midiinproc.h" />
+    <ClInclude Include="midimonitor.h" />
+    <ClInclude Include="midioutdevice.h" />
+    <ClInclude Include="midioutfilter.h" />
+    <ClInclude Include="midioutproc.h" />
+    <ClInclude Include="midipattern.h" />
+    <ClInclude Include="midiprocessor.h" />
+    <ClInclude Include="midiquarterframe.h" />
+    <ClInclude Include="midisettings.h" />
+    <ClInclude Include="midisync.h" />
+    <ClInclude Include="midithruproc.h" />
+    <ClInclude Include="miditimer.h" />
+    <ClInclude Include="MP3Player.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="objectevent.h" />
+    <ClInclude Include="objectids.h" />
+    <ClInclude Include="objectpattern.h" />
+    <ClInclude Include="object_group.h" />
+    <ClInclude Include="object_project.h" />
+    <ClInclude Include="object_song.h" />
+    <ClInclude Include="object_track.h" />
+    <ClInclude Include="object_trackhead.h" />
+    <ClInclude Include="openoutputnote.h" />
+    <ClInclude Include="panlaw.h" />
+    <ClInclude Include="PathDialog.h" />
+    <ClInclude Include="patternselection.h" />
+    <ClInclude Include="patternvolume.h" />
+    <ClInclude Include="peakbuffer.h" />
+    <ClInclude Include="peaks.h" />
+    <ClInclude Include="pianoeditor.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="pluginwindow.h" />
+    <ClInclude Include="proc_appr.h" />
+    <ClInclude Include="proc_chord.h" />
+    <ClInclude Include="proc_delay.h" />
+    <ClInclude Include="programsettings.h" />
+    <ClInclude Include="progress.h" />
+    <ClInclude Include="quantizeeditor.h" />
+    <ClInclude Include="quantizeeffect.h" />
+    <ClInclude Include="resample\common.h" />
+    <ClInclude Include="resample\config.h" />
+    <ClInclude Include="resample\fastest_coeffs.h" />
+    <ClInclude Include="resample\float_cast.h" />
+    <ClInclude Include="resample\high_qual_coeffs.h" />
+    <ClInclude Include="resample\mid_qual_coeffs.h" />
+    <ClInclude Include="resample\samplerate.h" />
+    <ClInclude Include="resample\unistd.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rmg.h" />
+    <ClInclude Include="runningaudiofile.h" />
+    <ClInclude Include="sampleditor.h" />
+    <ClInclude Include="sampleeditor.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="searchfilter.h" />
+    <ClInclude Include="semapores.h" />
+    <ClInclude Include="seqpos.h" />
+    <ClInclude Include="seqtime.h" />
+    <ClInclude Include="seqtrackeffects.h" />
+    <ClInclude Include="seq_realtime.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="shortkeys.h" />
+    <ClInclude Include="songmain.h" />
+    <ClInclude Include="stepeditor.h" />
+    <ClInclude Include="subtrack.h" />
+    <ClInclude Include="systemautomation.h" />
+    <ClInclude Include="tempomapeditor.h" />
+    <ClInclude Include="tempomaplist.h" />
+    <ClInclude Include="text.h" />
+    <ClInclude Include="textandmarker.h" />
+    <ClInclude Include="texteditordefines.h" />
+    <ClInclude Include="threads.h" />
+    <ClInclude Include="timestring.h" />
+    <ClInclude Include="toolbox.h" />
+    <ClInclude Include="trackeffect.h" />
+    <ClInclude Include="trackfx.h" />
+    <ClInclude Include="track_effects.h" />
+    <ClInclude Include="transporteditor.h" />
+    <ClInclude Include="triggerevent.h" />
+    <ClInclude Include="undo.h" />
+    <ClInclude Include="undofunctions.h" />
+    <ClInclude Include="undofunctions_marker.h" />
+    <ClInclude Include="undofunctions_pattern.h" />
+    <ClInclude Include="undofunctions_tempo.h" />
+    <ClInclude Include="undofunctions_text.h" />
+    <ClInclude Include="undofunctions_track.h" />
+    <ClInclude Include="undo_automation.h" />
+    <ClInclude Include="undo_events.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="vstdirectory.h" />
+    <ClInclude Include="vstguiwindow.h" />
+    <ClInclude Include="vstplugins.h" />
+    <ClInclude Include="vst\AEffect.h" />
+    <ClInclude Include="vst\aeffectx.h" />
+    <ClInclude Include="vst\AEffEditor.hpp" />
+    <ClInclude Include="vst\AudioEffect.hpp" />
+    <ClInclude Include="vst\audioeffectx.h" />
+    <ClInclude Include="waveeditor.h" />
+    <ClInclude Include="waveeditordefines.h" />
+    <ClInclude Include="wavemap.h" />
+    <ClInclude Include="wavetrackfx.h" />
+    <ClInclude Include="win32_device.h" />
+    <ClInclude Include="winzoom.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="icon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
