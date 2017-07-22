@@ -480,8 +480,6 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\PhonoStar_new\ex_wave.cpp" />
-    <ClCompile Include="..\PhonoStar_new\ex_wave_io.cpp" />
     <ClCompile Include="arrangeditor.cpp" />
     <ClCompile Include="arrangeditor_fx.cpp" />
     <ClCompile Include="arrangeeditorlist.cpp" />
@@ -641,6 +639,8 @@
     <ClCompile Include="PathDialog.cpp" />
     <ClCompile Include="patternlinks.cpp" />
     <ClCompile Include="patternvolume.cpp" />
+    <ClCompile Include="PhonoStar_new\ex_wave.cpp" />
+    <ClCompile Include="PhonoStar_new\ex_wave_io.cpp" />
     <ClCompile Include="pianoeditor.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="pluginwindow.cpp" />
@@ -708,8 +708,6 @@
     <ClCompile Include="winaudio.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\PhonoStar_new\ex_wave.h" />
-    <ClInclude Include="..\PhonoStar_new\systemdefines.h" />
     <ClInclude Include="arrangeditor.h" />
     <ClInclude Include="arrangeditor_defines.h" />
     <ClInclude Include="arrangeeditor.h" />
@@ -887,6 +885,9 @@
     <ClInclude Include="patternvolume.h" />
     <ClInclude Include="peakbuffer.h" />
     <ClInclude Include="peaks.h" />
+    <ClInclude Include="PhonoStar_new\ex_wave.h" />
+    <ClInclude Include="PhonoStar_new\fileio.H" />
+    <ClInclude Include="PhonoStar_new\systemdefines.h" />
     <ClInclude Include="pianoeditor.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="pluginwindow.h" />
